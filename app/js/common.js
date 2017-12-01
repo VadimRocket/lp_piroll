@@ -232,7 +232,7 @@ $(function() {
 					var content = $(this).offset().top;
 					var topofWindow =  $(window).scrollTop();
 					if(content < topofWindow + 240){
-						$(this).addClass('bounce');
+						$(this).addClass('pulse');
 					}
 				});	
 			/*---end PROFESSIONAL SKILLS animation---*/	
@@ -279,9 +279,7 @@ $(function() {
 					$(this).addClass('fadeInLeft');
 				}
 			});	
-		});
 
-		$(window).scroll(function(){
 			$('.movefadeinright').each(function(){
 				var content = $(this).offset().top;
 				var topofWindow =  $(window).scrollTop();
@@ -291,6 +289,7 @@ $(function() {
 				}
 			});	
 		});
+
 	/*---Scroll + Animation animate css---*/
 
 	/*--- Sticky menu ---*/

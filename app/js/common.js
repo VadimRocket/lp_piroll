@@ -11,11 +11,11 @@ $(function() {
 
 	/*---Lazy Load images---*/
 		var bLazy = new Blazy({
-	        // Options
+	        // Options for clients
 	    });
 		  var load__more__btn = $('.load-more__btn');
 		  var loadmore = $('.loadmore');
-			load__more__btn.on('click',function(){
+			load__more__btn.on('click', function(){
 				  loadmore.css('display','flex');
 				  var bLazy = new Blazy({
 				  });

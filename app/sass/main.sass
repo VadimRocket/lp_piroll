@@ -80,7 +80,7 @@ body
   top: 48%
   margin-left: -125px
   margin-top: -75px
-  color: #fff
+  color: $accent
   font-size: 40px
   letter-spacing: -2px
   text-align: center
@@ -110,7 +110,7 @@ body
   justify-content: space-between
   -ms-align-items: center
   align-items: center
-  color: #fff
+  color: $accent
   height: 100vh
   min-height: 600px
   background: url(../img/main-bg.jpg) no-repeat center 
@@ -185,7 +185,7 @@ header
     list-style: none
 
 .menu-link
-  color: #fff
+  color: $accent
   text-decoration: none
   font-family: 'Montserrat',sans-serif;
   text-transform: uppercase
@@ -239,11 +239,11 @@ header
 .about-us__container
  h2
   font-size: 30px
-  font-family: "Montserrat"
+  font-family: "Montserrat",sans-serif
   color: rgb(25, 25, 25)
   line-height: 2
  p
-  font-family: "Nunito Sans"
+  font-family: "Nunito Sans",sans-serif
   color: rgb(120, 120, 120)
   line-height: 1.5
   max-width: 630px
@@ -270,7 +270,7 @@ header
 
 	text-transform: uppercase
     font-size: 12px
-    font-family: "Montserrat"
+    font-family: "Montserrat",sans-serif
     color: rgb(0, 0, 0)
     line-height: 2.5
 	.line
@@ -280,7 +280,7 @@ header
 		position: relative
 	
 		.line65
-			background: #39b4af
+			background: $bgline
 			height: 3px
 			width: 65%
 
@@ -288,13 +288,13 @@ header
 			position: absolute
 			left: 0
 			top: 0
-			background: #39b4af
+			background: $bgline
 			height: 3px
 			width: 90%
 			opacity: 0
 
 		.line75
-			background: #39b4af
+			background: $bgline
 			height: 3px
 			width: 75%
 .forline90
@@ -362,21 +362,21 @@ header
 .projects__container-item
 	p
 		text-align: center
-		color: #fff
+		color: $accent
 		text-transform: uppercase
 
 
 .pe-7s-portfolio,.pe-7s-like,
 .pe-7s-star,.pe-7s-clock
 	font-size: 4rem
-    color: #fff
+    color: $accent
     line-height: 0.625	
-	color: #fff
+	color: $accent
 
 /*------Gallery-----*/
 .works__gallery
 	padding: 9px 0 0 0
-	background: #F5F5F5 
+	background: $lightgray 
 .works__gallery ul
 	display: -webkit-flex
 	display: -moz-flex
@@ -387,7 +387,7 @@ header
 	flex-wrap: wrap
 	justify-content: center
 	align-items: center
-	background: #F5F5F5
+	background: $lightgray
 .works__gallery ul li
 	margin-top: -9px	
 .works__gallery img
@@ -399,7 +399,7 @@ header
 	flex-wrap: wrap
 	justify-content: center
 	align-items: center
-	background: #F5F5F5
+	background: $lightgray
 .b-lazy 
    opacity: 0
    transform: scale(2)
@@ -411,7 +411,7 @@ header
 
 .load-more
 	min-height: 100px
-	background: #F5F5F5
+	background: $lightgray
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -420,7 +420,7 @@ header
 	flex-direction: row
 	justify-content: center
 	align-items: center
-	background: #F5F5F5
+	background: $lightgray
 
 .load-more__btn
 	text-transform: uppercase
@@ -490,7 +490,7 @@ header
   height: 97%
   width: 100%
   background-color: rgba(0, 0, 0, 0.7)
-  color: #fff
+  color: $accent
   text-align: center
   padding-top: 95px
   opacity: 0
@@ -528,7 +528,7 @@ header
 
 		
 .solution
-	background: #f5f5f5
+	background: $lightgray
 	min-height: 537px
 	display: -webkit-flex
 	display: -moz-flex
@@ -583,14 +583,14 @@ header
   font-size: 24px
   font-weight: 300
   padding: 10px 0
-  color: #fff
+  color: $accent
   font-size: 25px
   font-family: "Montserrat"
   line-height: 1.2
 
 .testimonial-author
   display: block
-  color: #fff
+  color: $accent
   font-size: 12px
   font-family: "Montserrat"
   line-height: 3
@@ -599,11 +599,11 @@ header
 .flickity-page-dots
   bottom: 60px
   .dot.is-selected
-    background: #fff
+    background: $accent
 
 .clients
 	min-height: 200px
-	background: #fff   
+	background: $accent   
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
@@ -623,7 +623,7 @@ header
 	flex-direction: column
 	flex-wrap: wrap
 	justify-content: space-around
-	background: #F5F5F5
+	background: $lightgray
 	align-items: center
 
 .need-project__content
@@ -646,7 +646,7 @@ header
 	width: 180px
 	height: 54px
 	border: none
-	color: #fff
+	color: $accent
 	text-transform: uppercase
 	text-align: center
 	vertical-align: middle
@@ -656,7 +656,7 @@ header
 	padding: 13px 20px
 	&:hover
 		cursor: pointer
-		color: #fff
+		color: $accent
 		background-color: darken($btncolor, 1%)
 
 footer	
@@ -700,7 +700,7 @@ footer
 
 .m-menu-link
   display: none
-  color: #fff
+  color: $accent
   font-size: 2.5rem
   position: fixed
   top: 7%
@@ -708,7 +708,7 @@ footer
   transform: translate(-50%, -50%)
   width: 50px
   height: 50px
-  background: #F5F5F5
+  background: $lightgray
   border-radius: 5%
   opacity: .6
 

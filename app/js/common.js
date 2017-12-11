@@ -184,12 +184,7 @@ $(function() {
 
 		function showSuccessMessageBid2(elemidForm2){	
 			var newp2 = document.createElement('p');
-				newp2.innerHTML = "Your message has been sent";
-				newp2.classList.add('success2');
-				newp2.classList.add('animated')
-			    newp2.classList.add('fadeInDown');
-		 		$(newp2).insertAfter( ".need-project__content");
-		 	    var props2 = {
+			var props2 = {
 					background: '#DFF0D8',
 					color : '#3C763D',
 					textAlign : 'center',
@@ -200,14 +195,23 @@ $(function() {
 					width: '320px',
 					padding : '27px',
 					fontSize: "16px",
-					position : "absolute",  
+					position : "absolute",
+					zIndex : "1000"  
 		 	  	};  
-		 		   $('.success2').css(props2); 
+
+				newp2.innerHTML = "Your message has been sent";
+				newp2.classList.add('success2');
+				newp2.classList.add('animated')
+			    newp2.classList.add('fadeInDown');
+		 		$(newp2).insertAfter( ".need-project__content");
+		 	    
+		 		 $('.success2').css(props2);   
 			 	setTimeout(function(){
 			 	    newp2.innerHTML = "";
 			 	    $("p.success2").remove(); 
 				},2000);	
 		};
+		
 	/* ---.E-mail Ajax Send---  */
 
 	/*----Animation animate css---*/
@@ -222,9 +226,9 @@ $(function() {
 				  var content = $(this).offset().top;
 				  var topofWindow =  $(window).scrollTop();
 					if(content < topofWindow + 240){
-							$( '.line90' ).addClass( 'forline90' );
-							$( '.line75' ).addClass( 'forline75' );
-							$( '.line65' ).addClass( 'forline65' );	
+						$( '.line90' ).addClass( 'forline90' );
+						$( '.line75' ).addClass( 'forline75' );
+						$( '.line65' ).addClass( 'forline65' );	
 					}
 				});
 				//animate css

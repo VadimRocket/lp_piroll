@@ -340,6 +340,7 @@ $(function() {
 	/*===. Scroll to section Mobile Menu===*/
 
 	/*=== Form validator ===*/
+		
 		$.validate({
 		    modules : 'html5'
 		});
